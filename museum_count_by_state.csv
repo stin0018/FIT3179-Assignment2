@@ -1,0 +1,394 @@
+State_or_Province,museumCount
+Aberdeen City,15
+Aberdeenshire,38
+Adur,2
+Allerdale,15
+Amber Valley,11
+Angus,18
+Antrim and Newtownabbey,3
+Ards and North Down,6
+Argyll and Bute,32
+Armagh City,18
+Arun,5
+Ashfield,1
+Ashford,9
+Aylesbury Vale,15
+Babergh,9
+Barking and Dagenham,1
+Barnet,6
+Barnsley,10
+Barrow-in-Furness,3
+Basildon,4
+Basingstoke and Deane,8
+Bassetlaw,7
+Bath and North East Somerset,25
+Bedford,10
+Belfast,20
+Bexley,4
+Birmingham,26
+Blaby,1
+Blackburn with Darwen,6
+Blackpool,2
+Blaenau Gwent,6
+Bolsover,5
+Bolton,8
+Boston,2
+Bournemouth,5
+Bracknell Forest,1
+Bradford,22
+Braintree,18
+Breckland,13
+Brent,1
+Brentwood,3
+Bridgend,2
+Brighton and Hove,17
+Bristol,22
+Broadland,7
+Bromley,6
+Bromsgrove,3
+Broxbourne,1
+Broxtowe,3
+Burnley,7
+Bury,3
+Caerphilly,4
+Calderdale,10
+Cambridge,14
+Camden,35
+Cannock Chase,1
+Canterbury,12
+Cardiff,10
+Carlisle,10
+Carmarthenshire,19
+Castle Point,4
+Causeway Coast and Glens,8
+Central Bedfordshire,13
+Ceredigion,20
+Channel Islands,32
+Charnwood,7
+Chelmsford,7
+Cheltenham,4
+Cherwell,7
+Cheshire East,25
+Cheshire West and Chester,18
+Chesterfield,3
+Chichester,19
+Chiltern,7
+Chorley,3
+Christchurch,5
+City of Edinburgh,47
+City of London,15
+Clackmannanshire,3
+Colchester,16
+Conwy,15
+Copeland,8
+Corby,2
+Cornwall,110
+Cotswold,21
+County Durham,22
+Coventry,8
+Craven,7
+Crawley,2
+Croydon,2
+Dacorum,4
+Darlington,3
+Dartford,2
+Daventry,9
+Denbighshire,17
+Derby,8
+Derbyshire Dales,22
+Derry City and Strabane,10
+Doncaster,6
+Dover,17
+Dudley,8
+Dumfries and Galloway,41
+Dundee City,14
+Ealing,2
+East Ayrshire,14
+East Cambridgeshire,8
+East Devon,18
+East Dorset,6
+East Dunbartonshire,3
+East Hampshire,9
+East Hertfordshire,13
+East Lindsey,16
+East Lothian,15
+East Northamptonshire,9
+East Renfrewshire,1
+East Riding of Yorkshire,29
+East Staffordshire,6
+Eastbourne,11
+Eastleigh,3
+Eden,10
+Elmbridge,4
+Enfield,4
+Epping Forest,4
+Epsom and Ewell,1
+Erewash,1
+Exeter,8
+Falkirk,6
+Fareham,4
+Fenland,6
+Fermanagh and Omagh,10
+Fife,36
+Flintshire,6
+Forest Heath,2
+Forest of Dean,10
+Fylde,6
+Gateshead,4
+Gedling,4
+Glasgow City,31
+Gloucester,5
+Gosport,8
+Gravesham,5
+Great Yarmouth,14
+Greenwich,15
+Guildford,18
+Gwynedd,30
+Hackney,5
+Halton,3
+Hambleton,9
+Hammersmith and Fulham,6
+Harborough,8
+Haringey,2
+Harlow,3
+Harrogate,16
+Harrow,6
+Hart,1
+Hartlepool,6
+Hastings,8
+Havant,2
+Havering,2
+Herefordshire,26
+Hertsmere,6
+High Peak,7
+Highland,69
+Hillingdon,3
+Hinckley and Bosworth,5
+Horsham,10
+Hounslow,10
+Huntingdonshire,11
+Hyndburn,2
+Inverclyde,2
+Ipswich,5
+Isle of Anglesey,16
+Isle of Man,17
+Isle of Wight,41
+Isles of Scilly,3
+Islington,9
+Kensington and Chelsea,16
+Kettering,6
+King_s Lynn and West Norfolk,13
+Kingston upon Hull,10
+Kingston upon Thames,2
+Kirklees,19
+Knowsley,1
+Lambeth,12
+Lancaster,14
+Leeds,22
+Leicester,14
+Lewes,13
+Lewisham,3
+Lichfield,9
+Lincoln,9
+Lisburn and Castlereagh,4
+Liverpool,26
+Luton,4
+Maidstone,13
+Maldon,11
+Malvern Hills,6
+Manchester,26
+Mansfield,1
+Medway,11
+Melton,2
+Mendip,12
+Merthyr Tydfil,3
+Merton,6
+Mid Devon,6
+Mid Suffolk,7
+Mid Sussex,10
+Mid Ulster,11
+Mid and East Antrim,11
+Middlesbrough,7
+Midlothian,5
+Milton Keynes,10
+Mole Valley,6
+Monmouthshire,10
+Moray,21
+Na h-Eileanan Siar,21
+Neath Port Talbot,7
+New Forest,14
+Newark and Sherwood,12
+Newcastle upon Tyne,13
+Newcastle-under-Lyme,6
+Newham,5
+Newport,3
+Newry,6
+North Ayrshire,14
+North Devon,13
+North Dorset,12
+North East Derbyshire,1
+North East Lincolnshire,4
+North Hertfordshire,9
+North Kesteven,11
+North Lanarkshire,10
+North Lincolnshire,11
+North Norfolk,34
+North Somerset,9
+North Tyneside,6
+North Warwickshire,1
+North West Leicestershire,13
+Northampton,7
+Northumberland,49
+Norwich,13
+Nottingham,18
+Nuneaton and Bedworth,5
+Oadby and Wigston,2
+Oldham,4
+Orkney Islands,15
+Oxford,13
+Pembrokeshire,24
+Pendle,7
+Perth and Kinross,22
+Peterborough,6
+Plymouth,5
+Poole,4
+Portsmouth,14
+Powys,27
+Preston,6
+Purbeck,11
+Reading,5
+Redbridge,2
+Redcar and Cleveland,8
+Redditch,2
+Reigate and Banstead,2
+Renfrewshire,9
+Rhondda Cynon Taf,6
+Ribble Valley,6
+Richmond upon Thames,21
+Richmondshire,8
+Rochdale,4
+Rochford,3
+Rossendale,7
+Rother,14
+Rotherham,5
+Rugby,6
+Runnymede,2
+Rushcliffe,5
+Rushmoor,5
+Rutland,4
+Ryedale,17
+Salford,6
+Sandwell,8
+Scarborough,17
+Scottish Borders,38
+Sedgemoor,7
+Sefton,9
+Selby,1
+Sevenoaks,14
+Sheffield,17
+Shepway,8
+Shetland Islands,19
+Shropshire,29
+Slough,1
+Solihull,4
+South Ayrshire,10
+South Bucks,1
+South Cambridgeshire,10
+South Derbyshire,7
+South Gloucestershire,11
+South Hams,14
+South Holland,8
+South Kesteven,9
+South Lakeland,26
+South Lanarkshire,20
+South Norfolk,11
+South Northamptonshire,4
+South Oxfordshire,14
+South Ribble,3
+South Somerset,19
+South Staffordshire,5
+South Tyneside,4
+Southampton,11
+Southend-on-Sea,7
+Southwark,27
+Spelthorne,1
+St Albans,7
+St Edmundsbury,13
+St. Helens,6
+Stafford,10
+Staffordshire Moorlands,10
+Stevenage,2
+Stirling,8
+Stockport,7
+Stockton-on-Tees,3
+Stoke-on-Trent,15
+Stratford-on-Avon,20
+Stroud,8
+Suffolk Coastal,22
+Sunderland,9
+Surrey Heath,5
+Sutton,4
+Swale,14
+Swansea,10
+Swindon,10
+Tameside,5
+Tamworth,1
+Tandridge,4
+Taunton Deane,11
+Teignbridge,15
+Telford and Wrekin,11
+Tendring,8
+Test Valley,8
+Tewkesbury,14
+Thanet,13
+Three Rivers,1
+Thurrock,5
+Tonbridge and Malling,4
+Torbay,10
+Torfaen,6
+Torridge,12
+Tower Hamlets,14
+Trafford,4
+Tunbridge Wells,7
+Uttlesford,9
+Vale of Glamorgan,5
+Vale of White Horse,12
+Wakefield,14
+Walsall,8
+Waltham Forest,4
+Wandsworth,6
+Warrington,7
+Warwick,15
+Watford,2
+Waveney,15
+Waverley,7
+Wealden,14
+Wellingborough,5
+Welwyn Hatfield,4
+West Berkshire,6
+West Devon,14
+West Dorset,25
+West Dunbartonshire,4
+West Lancashire,1
+West Lindsey,7
+West Lothian,11
+West Oxfordshire,16
+West Somerset,11
+Westminster,56
+Weymouth and Portland,8
+Wigan,7
+Wiltshire,55
+Winchester,20
+Windsor and Maidenhead,10
+Wirral,12
+Woking,2
+Wokingham,5
+Wolverhampton,5
+Worcester,10
+Worthing,2
+Wrexham,14
+Wychavon,7
+Wycombe,6
+Wyre,2
+Wyre Forest,7
+York,30
