@@ -1,260 +1,260 @@
 countryLabel,iso3,museumCount
-Italy,IT,21164
-Germany,DE,8320
-United States,US,7339
-United Kingdom,GB,6729
-Japan,JP,5097
-France,FR,3489
-Spain,ES,3279
-Brazil,BR,3084
-Sweden,SE,3041
-Poland,PL,2339
-Austria,AT,2258
-Russia,RU,2123
-Finland,FI,1973
-Argentina,AR,1921
-Switzerland,CH,1593
-Turkey,TR,1590
-Ukraine,UA,1517
-Mexico,MX,1506
-Belgium,BE,1376
-Chile,CL,1286
-Canada,CA,1263
-People's Republic of China,CN,1244
-Indonesia,ID,1229
-Greece,GR,1162
-Czech Republic,CZ,1108
-Norway,NO,980
-Australia,AU,969
-Denmark,DK,956
-India,IN,903
-Portugal,PT,890
-Taiwan,TW,782
-Bulgaria,BG,769
-Hungary,HU,763
-Israel,IL,753
-Romania,RO,656
-New Zealand,NZ,634
-Serbia,RS,612
-South Korea,KR,589
-Latvia,LV,575
-Belarus,BY,549
-Malaysia,MY,547
-Slovakia,SK,529
-Peru,PE,520
-Thailand,TH,519
-Ireland,IE,511
-Uruguay,UY,503
-Nigeria,NG,501
-South Africa,ZA,489
-Azerbaijan,AZ,478
-Egypt,EG,476
-Armenia,AM,476
-Croatia,HR,470
-Lithuania,LT,469
-Iran,IR,466
-Philippines,PH,466
-North Macedonia,MK,465
-Colombia,CO,454
-Bangladesh,BD,439
-Tunisia,TN,437
-Georgia,GE,435
-Slovenia,SI,434
-Morocco,MA,422
-Pakistan,PK,420
-Cameroon,CM,420
-Bosnia and Herzegovina,BA,420
-Singapore,SG,419
-Iceland,IS,415
-Saudi Arabia,SA,414
-Albania,AL,413
-Luxembourg,LU,412
-United Arab Emirates,AE,412
-Estonia,EE,411
-Uzbekistan,UZ,411
-Vietnam,VN,409
-Kazakhstan,KZ,408
-Uganda,UG,402
-Benin,BJ,401
-Algeria,DZ,400
-Malta,MT,398
-Sri Lanka,LK,394
-Cuba,CU,392
-Ecuador,EC,392
-Cyprus,CY,391
-Mongolia,MN,390
-Bolivia,BO,390
-Venezuela,VE,389
-Lebanon,LB,384
-Libya,LY,383
-Moldova,MD,382
-North Korea,KP,382
-Kenya,KE,381
-Isle of Man,IM,379
-Myanmar,MM,378
-San Marino,SM,378
-State of Palestine,PS,377
-Jersey,JE,377
-Costa Rica,CR,377
-Suriname,SR,377
-Jordan,JO,376
-Rwanda,RW,376
-Senegal,SN,376
-Greenland,GL,374
-Syria,SY,373
-Guernsey,GG,373
-Vatican City,VA,372
-Iraq,IQ,372
-Ghana,GH,372
-Cambodia,KH,372
-Chad,TD,372
-Guatemala,GT,370
-Oman,OM,369
-Honduras,HN,369
-Nepal,NP,369
-Panama,PA,368
-Liechtenstein,LI,368
-Kyrgyzstan,KG,366
-Aruba,AW,366
-Democratic Republic of the Congo,CD,366
-Dominican Republic,DO,366
-Curaçao,CW,365
-Burkina Faso,BF,365
-Andorra,AD,365
-Ethiopia,ET,364
-Guinea,GN,364
-Belize,BZ,364
-Tajikistan,TJ,364
-Tanzania,TZ,364
-Mauritius,MU,363
-Ivory Coast,CI,363
-El Salvador,SV,362
-Botswana,BW,362
-Monaco,MC,362
-Nicaragua,NI,361
-Paraguay,PY,361
-Sudan,SD,361
-Afghanistan,AF,361
-Montenegro,ME,361
-Kosovo,XK,360
-Yemen,YE,360
-Brunei,BN,360
-Kuwait,KW,360
-Qatar,QA,360
-Puerto Rico,PR,360
-Mozambique,MZ,360
-Malawi,MW,360
-Sierra Leone,SL,360
-Zimbabwe,ZW,360
-Haiti,HT,359
-Jamaica,JM,359
-Angola,AO,359
-Madagascar,MG,359
-The Bahamas,BS,359
-Cape Verde,CV,359
-Niger,NE,359
-Turkmenistan,TM,359
-German Democratic Republic,DD,359
-The Gambia,GM,358
-Zambia,ZM,358
-Bermuda,BM,358
-Laos,LA,358
-Republic of the Congo,CG,358
-Guinea-Bissau,GW,358
-Faroe Islands,FO,357
-Trinidad and Tobago,TT,357
-Samoa,WS,357
-Saint Kitts and Nevis,KN,357
-Bahrain,BH,357
-Togo,TG,356
-Barbados,BB,356
-Liberia,LR,356
-Mali,ML,356
-Eswatini,SZ,356
-Guyana,GY,356
-Antigua and Barbuda,AG,356
-Burundi,BI,355
-Palau,PW,355
-"Saint Helena, Ascension and Tristan da Cunha",SH,355
-Mauritania,MR,355
-Lesotho,LS,355
-Equatorial Guinea,GQ,355
-Fiji,FJ,355
-Bhutan,BT,355
-Somalia,SO,355
-Cayman Islands,KY,355
-Papua New Guinea,PG,355
-Federated States of Micronesia,FM,355
-Vanuatu,VU,355
-Marshall Islands,MH,354
-Maldives,MV,354
-Kiribati,KI,354
-Cocos (Keeling) Islands,CC,354
-Djibouti,DJ,354
-Grenada,GD,354
-Timor-Leste,TL,354
-Seychelles,SC,354
-Solomon Islands,SB,354
-Cook Islands,CK,354
-Comoros,KM,354
-Niue,NU,354
-Nauru,NR,354
-Turks and Caicos Islands,TC,354
-São Tomé and Príncipe,ST,354
-Tonga,TO,354
-French Polynesia,PF,353
-French Guiana,GF,353
-Falkland Islands,FK,353
-Eritrea,ER,353
-Guam,GU,353
-Yugoslavia,YU,353
-French Southern and Antarctic Lands,TF,353
-Gabon,GA,353
-United States Virgin Islands,VI,353
-American Samoa,AS,353
-Antarctic Treaty area,AQ,353
-Antarctica,AQ,353
-Anguilla,AI,353
-Guadeloupe,GP,353
-Heard Island and McDonald Islands,HM,353
-Hong Kong,HK,353
-Gibraltar,GI,353
-United States Minor Outlying Islands,UM,353
-Ascension,AC,353
-Wallis and Futuna,WF,353
-Western Sahara,EH,353
-Martinique,MQ,353
-Mayotte,YT,353
-Kingdom of the Netherlands,NL,353
-Pitcairn Islands,PN,353
-Dominica,DM,353
-Norfolk Island,NF,353
-Northern Mariana Islands,MP,353
-Netherlands Antilles,AN,353
-New Caledonia,NC,353
-Diego Garcia,DG,353
-Montserrat,MS,353
-Macau,MO,353
-British Virgin Islands,VG,353
-Saint Pierre and Miquelon,PM,353
-Saint Vincent and the Grenadines,VC,353
-Réunion,RE,353
-Saint Barthélemy,BL,353
-Caribbean Netherlands,BQ,353
-Saint Lucia,LC,353
-South Sudan,SS,353
-South Georgia and the South Sandwich Islands,GS,353
-Sint Maarten,SX,353
-Sark,CQ,353
-Saint-Martin,MF,353
-Clipperton Island,CP,353
-Christmas Island,CX,353
-Central African Republic,CF,353
-Bouvet Island,BV,353
-Svalbard and Jan Mayen,SJ,353
-Tokelau,TK,353
-British Indian Ocean Territory,IO,353
-Tristan da Cunha,TA,353
-Trust Territory of the Pacific Islands,PC,353
-Tuvalu,TV,353
-Åland,AX,353
+Afghanistan,AFG,361
+Albania,ALB,413
+Algeria,DZA,400
+American Samoa,ASM,353
+Andorra,AND,365
+Angola,AGO,359
+Anguilla,AIA,353
+Antarctic Treaty area,ATA,353
+Antarctica,ATA,353
+Antigua and Barbuda,ATG,356
+Argentina,ARG,1921
+Armenia,ARM,476
+Aruba,ABW,366
+Ascension,,353
+Australia,AUS,969
+Austria,AUT,2258
+Azerbaijan,AZE,478
+Bahrain,BHR,357
+Bangladesh,BGD,439
+Barbados,BRB,356
+Belarus,BLR,549
+Belgium,BEL,1376
+Belize,BLZ,364
+Benin,BEN,401
+Bermuda,BMU,358
+Bhutan,BTN,355
+Bolivia,BOL,390
+Bosnia and Herzegovina,BIH,420
+Botswana,BWA,362
+Bouvet Island,BVT,353
+Brazil,BRA,3084
+British Indian Ocean Territory,IOT,353
+British Virgin Islands,VGB,353
+Brunei,BRN,360
+Bulgaria,BGR,769
+Burkina Faso,BFA,365
+Burundi,BDI,355
+Cambodia,KHM,372
+Cameroon,CMR,420
+Canada,CAN,1263
+Cape Verde,CPV,359
+Caribbean Netherlands,BES,353
+Cayman Islands,CYM,355
+Central African Republic,CAF,353
+Chad,TCD,372
+Chile,CHL,1286
+Christmas Island,CXR,353
+Clipperton Island,,353
+Cocos (Keeling) Islands,CCK,354
+Colombia,COL,454
+Comoros,COM,354
+Cook Islands,COK,354
+Costa Rica,CRI,377
+Croatia,HRV,470
+Cuba,CUB,392
+Curaçao,CUW,365
+Cyprus,CYP,391
+Czech Republic,CZE,1108
+Democratic Republic of the Congo,COD,366
+Denmark,DNK,956
+Diego Garcia,,353
+Djibouti,DJI,354
+Dominica,DMA,353
+Dominican Republic,DOM,366
+Ecuador,ECU,392
+Egypt,EGY,476
+El Salvador,SLV,362
+Equatorial Guinea,GNQ,355
+Eritrea,ERI,353
+Estonia,EST,411
+Eswatini,SWZ,356
+Ethiopia,ETH,364
+Falkland Islands,FLK,353
+Faroe Islands,FRO,357
+Federated States of Micronesia,FSM,355
+Fiji,FJI,355
+Finland,FIN,1973
+France,FRA,3489
+French Guiana,GUF,353
+French Polynesia,PYF,353
+French Southern and Antarctic Lands,ATF,353
+Gabon,GAB,353
+Georgia,GEO,435
+German Democratic Republic,,359
+Germany,DEU,8320
+Ghana,GHA,372
+Gibraltar,GIB,353
+Greece,GRC,1162
+Greenland,GRL,374
+Grenada,GRD,354
+Guadeloupe,GLP,353
+Guam,GUM,353
+Guatemala,GTM,370
+Guernsey,GGY,373
+Guinea,GIN,364
+Guinea-Bissau,GNB,358
+Guyana,GUY,356
+Haiti,HTI,359
+Heard Island and McDonald Islands,HMD,353
+Honduras,HND,369
+Hong Kong,HKG,353
+Hungary,HUN,763
+Iceland,ISL,415
+India,IND,903
+Indonesia,IDN,1229
+Iran,IRN,466
+Iraq,IRQ,372
+Ireland,IRL,511
+Isle of Man,IMN,379
+Israel,ISR,753
+Italy,ITA,21164
+Ivory Coast,CIV,363
+Jamaica,JAM,359
+Japan,JPN,5097
+Jersey,JEY,377
+Jordan,JOR,376
+Kazakhstan,KAZ,408
+Kenya,KEN,381
+Kingdom of the Netherlands,NLD,353
+Kiribati,KIR,354
+Kosovo,,360
+Kuwait,KWT,360
+Kyrgyzstan,KGZ,366
+Laos,LAO,358
+Latvia,LVA,575
+Lebanon,LBN,384
+Lesotho,LSO,355
+Liberia,LBR,356
+Libya,LBY,383
+Liechtenstein,LIE,368
+Lithuania,LTU,469
+Luxembourg,LUX,412
+Macau,MAC,353
+Madagascar,MDG,359
+Malawi,MWI,360
+Malaysia,MYS,547
+Maldives,MDV,354
+Mali,MLI,356
+Malta,MLT,398
+Marshall Islands,MHL,354
+Martinique,MTQ,353
+Mauritania,MRT,355
+Mauritius,MUS,363
+Mayotte,MYT,353
+Mexico,MEX,1506
+Moldova,MDA,382
+Monaco,MCO,362
+Mongolia,MNG,390
+Montenegro,MNE,361
+Montserrat,MSR,353
+Morocco,MAR,422
+Mozambique,MOZ,360
+Myanmar,MMR,378
+Nauru,NRU,354
+Nepal,NPL,369
+Netherlands Antilles,,353
+New Caledonia,NCL,353
+New Zealand,NZL,634
+Nicaragua,NIC,361
+Niger,NER,359
+Nigeria,NGA,501
+Niue,NIU,354
+Norfolk Island,NFK,353
+North Korea,PRK,382
+North Macedonia,MKD,465
+Northern Mariana Islands,MNP,353
+Norway,NOR,980
+Oman,OMN,369
+Pakistan,PAK,420
+Palau,PLW,355
+Panama,PAN,368
+Papua New Guinea,PNG,355
+Paraguay,PRY,361
+People's Republic of China,CHN,1244
+Peru,PER,520
+Philippines,PHL,466
+Pitcairn Islands,PCN,353
+Poland,POL,2339
+Portugal,PRT,890
+Puerto Rico,PRI,360
+Qatar,QAT,360
+Republic of the Congo,COG,358
+Romania,ROU,656
+Russia,RUS,2123
+Rwanda,RWA,376
+Réunion,REU,353
+Saint Barthélemy,BLM,353
+"Saint Helena, Ascension and Tristan da Cunha",SHN,355
+Saint Kitts and Nevis,KNA,357
+Saint Lucia,LCA,353
+Saint Pierre and Miquelon,SPM,353
+Saint Vincent and the Grenadines,VCT,353
+Saint-Martin,MAF,353
+Samoa,WSM,357
+San Marino,SMR,378
+Sark,,353
+Saudi Arabia,SAU,414
+Senegal,SEN,376
+Serbia,SRB,612
+Seychelles,SYC,354
+Sierra Leone,SLE,360
+Singapore,SGP,419
+Sint Maarten,SXM,353
+Slovakia,SVK,529
+Slovenia,SVN,434
+Solomon Islands,SLB,354
+Somalia,SOM,355
+South Africa,ZAF,489
+South Georgia and the South Sandwich Islands,SGS,353
+South Korea,KOR,589
+South Sudan,SSD,353
+Spain,ESP,3279
+Sri Lanka,LKA,394
+State of Palestine,PSE,377
+Sudan,SDN,361
+Suriname,SUR,377
+Svalbard and Jan Mayen,SJM,353
+Sweden,SWE,3041
+Switzerland,CHE,1593
+Syria,SYR,373
+São Tomé and Príncipe,STP,354
+Taiwan,TWN,782
+Tajikistan,TJK,364
+Tanzania,TZA,364
+Thailand,THA,519
+The Bahamas,BHS,359
+The Gambia,GMB,358
+Timor-Leste,TLS,354
+Togo,TGO,356
+Tokelau,TKL,353
+Tonga,TON,354
+Trinidad and Tobago,TTO,357
+Tristan da Cunha,,353
+Trust Territory of the Pacific Islands,,353
+Tunisia,TUN,437
+Turkey,TUR,1590
+Turkmenistan,TKM,359
+Turks and Caicos Islands,TCA,354
+Tuvalu,TUV,353
+Uganda,UGA,402
+Ukraine,UKR,1517
+United Arab Emirates,ARE,412
+United Kingdom,GBR,6729
+United States,USA,7339
+United States Minor Outlying Islands,UMI,353
+United States Virgin Islands,VIR,353
+Uruguay,URY,503
+Uzbekistan,UZB,411
+Vanuatu,VUT,355
+Vatican City,VAT,372
+Venezuela,VEN,389
+Vietnam,VNM,409
+Wallis and Futuna,WLF,353
+Western Sahara,ESH,353
+Yemen,YEM,360
+Yugoslavia,,353
+Zambia,ZMB,358
+Zimbabwe,ZWE,360
+Åland,ALA,353
