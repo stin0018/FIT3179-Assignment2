@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 900,
+  "height": 500,
+  "projection": {"type": "equalEarth"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
+        "format": {"type": "topojson", "feature": "oceans"}
+      },
+      "mark": {"type": "geoshape", "fill": "#b3d9ff"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "mark": {"type": "geoshape", "fill": "#f0f0f0", "stroke": "white"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "transform": [
+        {
+          "lookup": "properties.ISO_A3",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/refs/heads/main/museum_count_by_country.csv",
+              "format": {"type": "csv"}
+            },
+            "key": "iso3",
+            "fields": ["museumCount"]
+          }
+        },
+        {
+          "calculate": "isValid(datum.museumCount) ? toNumber(datum.museumCount) : 0",
+          "as": "museumCount"
+        }
+      ],
+      "mark": {"type": "geoshape", "stroke": "white"},
+      "encoding": {
+        "color": {
+          "field": "museumCount",
+          "type": "quantitative",
+          "scale": {
+            "domain": [200, 33000],
+            "type": "log",
+            "scheme": "reds"
+          },
+          "title": "Number of Museums",
+          "legend": {
+            "orient": "right",
+          "direction": "horizontal"
+        },
+          "condition": {"test": "datum.museumCount === 0", "value": "lightgrey"}
+        },
+        "tooltip": [
+          {"field": "properties.NAME", "title": "Country"},
+          {"field": "museumCount", "title": "Museums"}
+        ]
+      }
+    }
+  ]
+}

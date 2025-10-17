@@ -1,0 +1,200 @@
+acquisition_decade,aqusition_way,count
+1700.0,Division of Finds,2
+1700.0,Donation,2
+1700.0,Purchase,3
+1700.0,,12
+1710.0,Division of Finds,1
+1710.0,Donation,1
+1710.0,Purchase,4
+1710.0,,8
+1720.0,Purchase,4
+1720.0,,5
+1730.0,Purchase,6
+1730.0,,10
+1740.0,Division of Finds,1
+1740.0,Purchase,2
+1740.0,,6
+1750.0,Bequest,626
+1750.0,Division of Finds,1
+1750.0,Donation,10
+1750.0,Purchase,4
+1750.0,Transfer,28
+1750.0,,7
+1760.0,Bequest,30
+1760.0,Donation,18
+1760.0,Purchase,1
+1760.0,,6
+1770.0,Bequest,3
+1770.0,Donation,10
+1770.0,Purchase,91
+1770.0,,74
+1780.0,Donation,24
+1780.0,Purchase,2
+1780.0,,8
+1790.0,Bequest,713
+1790.0,Division of Finds,1
+1790.0,Donation,13
+1790.0,Purchase,3
+1790.0,,16
+1800.0,Bequest,2
+1800.0,Division of Finds,1
+1800.0,Donation,93
+1800.0,Purchase,76
+1800.0,Transfer,1
+1800.0,,53
+1810.0,Bequest,239
+1810.0,Donation,1146
+1810.0,Purchase,672
+1810.0,Transfer,61
+1810.0,,172
+1820.0,Bequest,211
+1820.0,Division of Finds,1
+1820.0,Donation,355
+1820.0,Purchase,252
+1820.0,Transfer,2
+1820.0,,23
+1830.0,Bequest,22
+1830.0,Donation,275
+1830.0,Purchase,1395
+1830.0,Transfer,9
+1830.0,,358
+1840.0,Donation,552
+1840.0,Exchange,1
+1840.0,Purchase,2029
+1840.0,Transfer,9
+1840.0,,226
+1850.0,Bequest,172
+1850.0,Division of Finds,1
+1850.0,Donation,1232
+1850.0,Exchange,1
+1850.0,Purchase,3905
+1850.0,Transfer,124
+1850.0,,814
+1860.0,Bequest,854
+1860.0,Division of Finds,1
+1860.0,Donation,2343
+1860.0,Exchange,100
+1860.0,Purchase,3949
+1860.0,Transfer,53
+1860.0,,762
+1870.0,Bequest,262
+1870.0,Division of Finds,5
+1870.0,Donation,3616
+1870.0,Exchange,38
+1870.0,Purchase,3913
+1870.0,Transfer,61
+1870.0,Treasure Trove,9
+1870.0,,934
+1880.0,Bequest,235
+1880.0,Division of Finds,2
+1880.0,Donation,5266
+1880.0,Exchange,16
+1880.0,Purchase,3581
+1880.0,Transfer,479
+1880.0,Treasure Trove,2
+1880.0,,1913
+1890.0,Bequest,1925
+1890.0,Division of Finds,15
+1890.0,Donation,3708
+1890.0,Exchange,103
+1890.0,Purchase,3974
+1890.0,Transfer,184
+1890.0,Treasure Trove,8
+1890.0,,1147
+1900.0,Bequest,463
+1900.0,Donation,5739
+1900.0,Exchange,32
+1900.0,Purchase,4449
+1900.0,Transfer,41
+1900.0,Treasure Trove,34
+1900.0,,837
+1910.0,Bequest,943
+1910.0,Donation,3886
+1910.0,Exchange,26
+1910.0,Purchase,2428
+1910.0,Transfer,317
+1910.0,Treasure Trove,11
+1910.0,,1583
+1920.0,Bequest,414
+1920.0,Division of Finds,585
+1920.0,Donation,5323
+1920.0,Exchange,73
+1920.0,Purchase,2880
+1920.0,Transfer,167
+1920.0,Treasure Trove,4
+1920.0,,1794
+1930.0,Bequest,425
+1930.0,Division of Finds,646
+1930.0,Donation,6046
+1930.0,Exchange,59
+1930.0,Purchase,2588
+1930.0,Transfer,580
+1930.0,Treasure Trove,18
+1930.0,,1669
+1940.0,Bequest,988
+1940.0,Division of Finds,609
+1940.0,Donation,2751
+1940.0,Exchange,62
+1940.0,Purchase,1736
+1940.0,Transfer,104
+1940.0,Treasure Trove,3
+1940.0,,537
+1950.0,Bequest,717
+1950.0,Division of Finds,51
+1950.0,Donation,4805
+1950.0,Exchange,37
+1950.0,Purchase,2100
+1950.0,Transfer,72
+1950.0,Treasure Trove,5
+1950.0,,1011
+1960.0,Bequest,776
+1960.0,Division of Finds,16
+1960.0,Donation,2678
+1960.0,Exchange,59
+1960.0,Purchase,1691
+1960.0,Transfer,321
+1960.0,Treasure Trove,55
+1960.0,,704
+1970.0,Bequest,350
+1970.0,Division of Finds,14
+1970.0,Donation,2819
+1970.0,Exchange,488
+1970.0,Purchase,3334
+1970.0,Transfer,268
+1970.0,Treasure Trove,77
+1970.0,,4199
+1980.0,Bequest,530
+1980.0,Division of Finds,408
+1980.0,Donation,5325
+1980.0,Exchange,19
+1980.0,Purchase,7128
+1980.0,Transfer,222
+1980.0,Treasure Trove,71
+1980.0,,5256
+1990.0,Bequest,213
+1990.0,Division of Finds,178
+1990.0,Donation,4488
+1990.0,Exchange,1
+1990.0,Purchase,4102
+1990.0,Transfer,97
+1990.0,Treasure Trove,133
+1990.0,,2173
+2000.0,Bequest,347
+2000.0,Division of Finds,49
+2000.0,Donation,5534
+2000.0,Exchange,2
+2000.0,Purchase,2088
+2000.0,Transfer,18
+2000.0,Treasure Trove,10
+2000.0,,1941
+2010.0,Bequest,363
+2010.0,Division of Finds,121
+2010.0,Donation,4267
+2010.0,Purchase,1753
+2010.0,Transfer,43
+2010.0,,1283
+2020.0,Bequest,111
+2020.0,Donation,215
+2020.0,Purchase,99
+2020.0,Transfer,3
+2020.0,,183

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/refs/heads/main/british_museum_object.csv"
+  },
+  "transform": [
+    {
+      "calculate": "toNumber(datum.acquisition_date)",
+      "as": "acquisition_year"
+    },
+    {
+      "filter": "datum.acquisition_year != null"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "tooltip": true,
+    "cornerRadiusEnd": 3,
+    "stroke": "black",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "x": {
+      "field": "acquisition_year",
+      "bin": {"maxbins": 20},
+      "type": "quantitative",
+      "title": "Acquisition Year",
+      "axis": {"labelAngle": -45},
+      "scale": {"paddingInner": 0.1}  
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Number of Objects"
+    },
+    "tooltip": [
+      {"field": "acquisition_year", "type": "quantitative", "title": "Year"},
+      {"aggregate": "count", "type": "quantitative", "title": "Number of Objects"}
+    ]
+  }
+}

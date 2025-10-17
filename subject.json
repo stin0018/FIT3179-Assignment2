@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Lollipop chart of museum count by subject",
+  "width": 600,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/refs/heads/main/museum_count_by_subject.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#cbd5e0",
+        "size": 2
+      },
+      "encoding": {
+        "y": {
+          "field": "subject",
+          "type": "nominal",
+          "sort": "-x",
+          "axis": {
+            "title": "Subject Category",
+            "labelLimit": 150
+          }
+        },
+        "x": {
+          "field": "count",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 200,
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "y": {
+          "field": "subject",
+          "type": "nominal",
+          "sort": "-x"
+        },
+        "x": {
+          "field": "count",
+          "type": "quantitative",
+          "axis": {
+            "title": "Number of Museums",
+            "grid": true
+          }
+        },
+        "color": {
+          "field": "count",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "turbo"
+          },
+          "legend": {
+            "title": "Count"
+          }
+        },
+        "tooltip": [
+          {"field": "subject", "type": "nominal", "title": "Subject"},
+          {"field": "count", "type": "quantitative", "title": "Museum Count"}
+        ]
+      }
+    }
+  ]
+}

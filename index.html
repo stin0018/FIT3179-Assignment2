@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museum Map Visualization</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <script src="vega_lite_vis.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    .map-section {
+      margin-bottom: 60px;
+    }
+
+    .map-section h2 {
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .vis-container {
+      margin: auto;
+      width: 90%;
+      max-width: 900px;
+    }
+
+    @media (max-width: 768px) {
+      .vis-container {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Museum</h1>
+
+  <div class="map-section">
+    <h2>Global Museum Map</h2>
+    <div id="museum_map" class="vis-container"></div>
+  </div>
+
+  <div class="map-section">
+    <h2>UK Museum Distribution</h2>
+    <div id="uk_map" class="vis-container"></div>
+  </div>
+
+  <div class="map-section">
+    <h2>Museum Density in UK</h2>
+    <div id="density" class="vis-container"></div>
+  </div>
+
+  <div class="map-section">
+    <h2>Museum Subjects</h2>
+    <div id="subject" class="vis-container"></div>
+  </div>
+
+  <div class="map-section">
+    <h2>Top 10 Museums in UK</h2>
+    <div id="top_10" class="vis-container"></div>
+  </div>
+
+  <div class="map-section">
+    <h2>Acquisition Over Time in British Museum</h2>
+    <div id="object_type" class="vis-container"></div>
+  </div>
+
+</body>
+</html>
