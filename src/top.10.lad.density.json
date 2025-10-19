@@ -1,0 +1,95 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 800,
+  "height": 500,
+  "title": {
+    "text": "UK Local Authority Museums: Number of Museums vs Total Population",
+    "subtitle": "Red points represent outliers far from the regression trendline",
+    "fontSize": 16,
+    "subtitleFontSize": 12
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/refs/heads/main/data/museums_uk_final.csv"
+  },
+  "transform": [
+    {
+      "calculate": "toNumber(datum.Counts)",
+      "as": "Counts_num"
+    },
+    {
+      "calculate": "toNumber(datum.People_per_museum)",
+      "as": "People_per_museum_num"
+    },
+    {
+      "filter": "isValid(datum.Counts_num) && isValid(datum.People_per_museum_num)"
+    },
+    {
+      "calculate": "datum.Counts_num * datum.People_per_museum_num",
+      "as": "Total_population"
+    },
+    {
+      "filter": "isFinite(datum.Total_population)"
+    },
+    {
+      "window": [
+        { "op": "mean", "field": "Total_population", "as": "mean_pop" },
+        { "op": "stdev", "field": "Total_population", "as": "stdev_pop" }
+      ]
+    },
+    {
+      "calculate": "abs(datum.Total_population - datum.mean_pop) > 2 * datum.stdev_pop ? 'Outlier' : 'Normal'",
+      "as": "Outlier_Flag"
+    }
+  ],
+  "layer": [
+    {
+      "mark": { "type": "circle", "filled": true, "opacity": 0.7, "size": 100 },
+      "encoding": {
+        "x": {
+          "field": "Counts_num",
+          "type": "quantitative",
+          "title": "Number of Museums"
+        },
+        "y": {
+          "field": "Total_population",
+          "type": "quantitative",
+          "title": "Total Population"
+        },
+        "color": {
+          "field": "Outlier_Flag",
+          "type": "nominal",
+          "scale": { "domain": ["Normal", "Outlier"], "range": ["steelblue", "red"] },
+          "legend": { "title": "Point Type" }
+        },
+        "tooltip": [
+          { "field": "State_name", "title": "Local Authority" },
+          { "field": "Counts_num", "title": "Number of Museums" },
+          { "field": "Total_population", "title": "Total Population", "format": "," }
+        ]
+      }
+    },
+    {
+      "mark": { "type": "line", "color": "red", "strokeWidth": 2 },
+      "transform": [
+        { "regression": "Total_population", "on": "Counts_num", "rSquared": true }
+      ],
+      "encoding": {
+        "x": { "field": "Counts_num", "type": "quantitative" },
+        "y": { "field": "Total_population", "type": "quantitative" },
+        "tooltip": [
+          { "field": "rSquared", "title": "R² (fit quality)", "format": ".2f" }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "background": "white",
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "grid": true,
+      "gridOpacity": 0.2
+    },
+    "legend": { "labelFontSize": 12, "titleFontSize": 13 }
+  }
+}

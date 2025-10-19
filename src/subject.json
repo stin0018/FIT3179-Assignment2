@@ -1,0 +1,83 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Number of Museums in the UK by Subject Category",
+    "anchor":"middle",
+    "fontSize": 16,
+    "color": "black"
+  },
+  "width": 600,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/refs/heads/main/museum_count_by_subject.csv"
+  },
+  "transform": [
+    {
+      "calculate": "toNumber(datum.count)",
+      "as": "count_num"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "rule", "color": "#cbd5e0", "size": 2},
+      "encoding": {
+        "y": {
+          "field": "subject",
+          "type": "nominal",
+          "sort": "-x",
+          "axis": {"title": "Subject Category", "labelLimit": 150}
+        },
+        "x": {"field": "count_num", "type": "quantitative"}
+      }
+    },
+    {
+      "mark": {"type": "circle", "size": 200, "cursor": "pointer"},
+      "encoding": {
+        "y": {"field": "subject", "type": "nominal", "sort": "-x"},
+        "x": {
+          "field": "count_num",
+          "type": "quantitative",
+          "axis": {"title": "Number of Museums", "grid": true}
+        },
+        "tooltip": [
+          {"field": "subject", "type": "nominal", "title": "Subject"},
+          {"field": "count_num", "type": "quantitative", "title": "Number of Museums"}
+        ]
+      }
+    },
+
+    {
+      "transform": [{"filter": "datum.subject == 'Local Histories '"}],
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "dy": 15,
+        "color": "darkblue",
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {"field": "count_num", "type": "quantitative"},
+        "y": {"field": "subject", "type": "nominal"},
+        "text": {"value": "Local history prominence reflects"}
+      }
+    },
+    {
+      "transform": [{"filter": "datum.subject == 'Local Histories '"}],
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "dy": 30,
+        "color": "darkblue",
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {"field": "count_num", "type": "quantitative"},
+        "y": {"field": "subject", "type": "nominal"},
+        "text": {"value": "Britain's focus on preserving regional culture"}
+      }
+    }
+  ]
+}

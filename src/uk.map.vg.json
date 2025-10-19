@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Museum Density Across the United Kingdom (Museums per km²)",
+    "anchor":"middle",
+    "fontSize": 16,
+    "color": "black"
+  },
+  "width": 700,
+  "height": 900,
+  "projection": {
+    "type": "mercator",
+    "center": [-2, 54],
+    "scale": 3500
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/refs/heads/main/ne_10m_admin_1_states_provinces.json",
+    "format": {
+      "type": "topojson",
+      "feature": "ne_10m_admin_1_states_provinces"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/refs/heads/main/data/museums_uk_final.csv",
+          "format": {"type": "csv"}
+        },
+        "key": "State_name",
+        "fields": ["Museums_per_km2"]
+      }
+    },
+    {
+      "calculate": "datum.Museums_per_km2 != null ? toNumber(datum.Museums_per_km2) : 0",
+      "as": "museumPerKm2"
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "condition": {
+        "test": "datum.museumPerKm2 > 0",
+        "field": "museumPerKm2",
+        "type": "quantitative",
+        "scale": {"scheme": "reds", "domain": [0, 0.02]}
+      },
+      "value": "lightgrey",
+      "legend": {
+        "orient": "bottom",
+        "title": "Museums per km²"
+      }
+    },
+    "tooltip": [
+      {"field": "properties.name", "title": "County"},
+      {"field": "museumPerKm2", "title": "Museums per km²"}
+    ]
+  },
+  "config": {
+    "title": {
+      "text": "Museums per km² in the UK",
+      "fontSize": 20,
+      "anchor": "start",
+      "fontWeight": "bold"
+    },
+    "view": {"stroke": "transparent"}
+  }
+}

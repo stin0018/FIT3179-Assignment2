@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "UK’s 10 Most Popular Tourist Attractions (2024)",
+    "anchor":"middle",
+    "fontSize": 16,
+    "color": "black"
+  },
+  "width": 700,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/refs/heads/main/top_10_uk.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "toNumber(datum['Visitors (2024)'])", "as": "Visitors"},
+    {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "Visitors", "order": "descending"}]},
+    {"filter": "datum.rank <= 10"}
+  ],
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "Attraction",
+      "type": "ordinal",
+      "sort": "-x",
+      "axis": {"labelAngle": 0, "title": ""}
+    },
+    "x": {
+      "field": "Visitors",
+      "type": "quantitative",
+      "axis": {"title": "Number of Visitors"}
+    },
+    "tooltip": [
+      {"field": "Attraction", "type": "nominal"},
+      {"field": "Location", "type": "nominal"},
+      {"field": "Visitors", "type": "quantitative"}
+    ]
+  },
+  "config": {
+    "title": {"fontSize": 18, "anchor": "start"},
+    "view": {"stroke": "transparent"}
+  }
+}

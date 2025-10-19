@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stacked bar chart with culture filter, dynamic y-axis, and conditional legend/trend line visibility.",
+  "title": {
+    "text": "Cultural Composition of British Museum Acquisitions (1800–2020)",
+    "anchor": "middle",
+    "fontSize": 16,
+    "color": "black"
+  },
+  "width": 850,
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/refs/heads/main/data/british_museum_culture_trends.csv"
+  },
+  "params": [
+    {
+      "name": "cultureSelect",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Edo Period", "Iron Age", "Romano-British", "Roman",
+          "Attic", "Bronze Age", "Early Anglo-Saxon", "Qing dynasty",
+          "Neolithic/Bronze Age", "Neolithic", "Other"
+        ],
+        "labels": [
+          "All Cultures", "Edo Period", "Iron Age", "Romano-British", "Roman",
+          "Attic", "Bronze Age", "Early Anglo-Saxon", "Qing dynasty",
+          "Neolithic/Bronze Age", "Neolithic", "Other"
+        ],
+        "name": "Filter by Culture: "
+      },
+      "value": null
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "datum.filtered_culture === 'Other' ? 0.3 : 1",
+      "as": "baseOpacity"
+    },
+    {
+      "calculate": "cultureSelect == null ? datum.baseOpacity : 1",
+      "as": "finalOpacity"
+    },
+    {
+      "calculate": "datum.filtered_culture === 'Other' ? 0 : 1",
+      "as": "isOther"
+    }
+  ],
+  "layer": [
+    {
+      "transform": [
+        {"filter": "cultureSelect == null || datum.filtered_culture == cultureSelect"}
+      ],
+      "mark": {"type": "bar", "tooltip": true},
+      "encoding": {
+        "x": {
+          "field": "decade",
+          "type": "ordinal",
+          "title": "Decade of Acquisition",
+          "axis": {"labelAngle": -45, "labelFontSize": 12}
+        },
+        "y": {
+          "field": "count",
+          "type": "quantitative",
+          "title": "Number of Objects",
+          "stack": "zero"
+        },
+        "color": {
+          "condition": {
+            "test": "cultureSelect == null",
+            "field": "filtered_culture",
+            "type": "nominal",
+            "title": "Culture / Period",
+            "scale": {
+              "domain": [
+                "Edo Period", "Iron Age", "Romano-British", "Roman",
+                "Attic", "Bronze Age", "Early Anglo-Saxon", "Qing dynasty",
+                "Neolithic/Bronze Age", "Neolithic", "Other"
+              ],
+              "range": [
+                "#4E79A7", "#A0CBE8", "#F28E2B", "#FFBE7D",
+                "#B07AA1", "#D4A6C8", "#9C755F", "#D7B5A6",
+                "#8E6BBE", "#4C4C9D", "#9C9C9C"
+              ]
+            },
+            "legend": {"orient": "right"}
+          },
+          "value": "#4E79A7"
+        },
+        "opacity": {"field": "finalOpacity", "legend": null},
+        "order": {"field": "isOther", "type": "quantitative", "sort": "ascending"},
+        "tooltip": [
+          {"field": "decade", "type": "ordinal", "title": "Decade"},
+          {"field": "filtered_culture", "type": "nominal", "title": "Culture / Period"},
+          {"field": "count", "type": "quantitative", "title": "Objects"}
+        ]
+      }
+    },
+
+    {
+      "transform": [
+        {"filter": "cultureSelect == null"},
+        {
+          "aggregate": [{"op": "sum", "field": "count", "as": "total_count"}],
+          "groupby": ["decade"]
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "color": "#0f41e6",
+        "strokeWidth": 2,
+        "interpolate": "monotone",
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {"field": "decade", "type": "ordinal"},
+        "y": {"field": "total_count", "type": "quantitative"},
+        "tooltip": [
+          {"field": "decade", "title": "Decade"},
+          {"field": "total_count", "title": "Total Acquisitions"}
+        ]
+      }
+    },
+    {
+      "transform": [
+        {"filter": "cultureSelect == null"},
+        {
+          "aggregate": [{"op": "sum", "field": "count", "as": "total_count"}],
+          "groupby": ["decade"]
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "dy": -5,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#2c3e50"
+      },
+      "encoding": {
+        "x": {"field": "decade", "type": "ordinal"},
+        "y": {"field": "total_count", "type": "quantitative"},
+        "text": {"field": "total_count", "type": "quantitative"}
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {"titleFontSize": 14, "labelFontSize": 12},
+    "legend": {"titleFontSize": 13, "labelFontSize": 11}
+  }
+}

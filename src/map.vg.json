@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "How Densely Are Museums Distributed Around the World?",
+    "anchor":"middle",
+    "fontSize": 16,
+    "color": "black"
+  },
+  "width": 900,
+  "height": 500,
+  "projection": {"type": "equalEarth"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
+        "format": {"type": "topojson", "feature": "oceans"}
+      },
+      "mark": {"type": "geoshape", "fill": "#b3d9ff"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "mark": {"type": "geoshape", "fill": "#f0f0f0", "stroke": "white"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "transform": [
+        {
+          "lookup": "properties.ISO_A3_EH",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/98beb39495e06659f52b29afa75dbbfd5dc66421/data/museums_density_global.csv",
+              "format": {"type": "csv"}
+            },
+            "key": "iso3",
+            "fields": ["Museums_per_100k"]
+          }
+        },
+        {
+          "calculate": "isValid(datum.Museums_per_100k) ? toNumber(datum.Museums_per_100k) : 0",
+          "as": "Museums_per_100k"
+        }
+      ],
+      "mark": {"type": "geoshape", "stroke": "white"},
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "datum.Museums_per_100k === 0",
+            "value": "lightgrey"
+          },
+          "field": "Museums_per_100k",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "reds",
+            "type": "linear"
+          },
+          "title": "Museums per 100k People"
+        },
+        "tooltip": [
+          {"field": "properties.NAME", "title": "Country"},
+          {
+            "field": "Museums_per_100k",
+            "title": "Museums per 100k",
+            "format": ".2f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "legend": {
+      "orient": "right",
+      "titleFontSize": 12,
+      "labelFontSize": 10
+    },
+    "view": {"stroke": "transparent"}
+  }
+}
