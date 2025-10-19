@@ -1,0 +1,268 @@
+decade,filtered_culture,count,percentage
+1700,Edo Period,1,12.5
+1700,Iron Age,3,37.5
+1700,Other,4,50.0
+1710,Iron Age,4,36.36
+1710,Other,7,63.64
+1720,Iron Age,2,28.57
+1720,Other,5,71.43
+1730,Iron Age,6,54.55
+1730,Other,3,27.27
+1730,Romano-British,2,18.18
+1740,Iron Age,2,33.33
+1740,Other,3,50.0
+1740,Roman,1,16.67
+1750,Attic,4,3.81
+1750,Bronze Age,2,1.9
+1750,Early Anglo-Saxon,1,0.95
+1750,Edo Period,7,6.67
+1750,Iron Age,3,2.86
+1750,Other,55,52.38
+1750,Qing dynasty,3,2.86
+1750,Roman,16,15.24
+1750,Romano-British,14,13.33
+1760,Other,6,85.71
+1760,Romano-British,1,14.29
+1770,Attic,27,22.5
+1770,Iron Age,2,1.67
+1770,Other,78,65.0
+1770,Roman,13,10.83
+1780,Iron Age,1,11.11
+1780,Other,6,66.67
+1780,Roman,2,22.22
+1790,Other,17,94.44
+1790,Romano-British,1,5.56
+1800,Edo Period,6,5.88
+1800,Iron Age,1,0.98
+1800,Other,37,36.27
+1800,Roman,54,52.94
+1800,Romano-British,4,3.92
+1810,Attic,5,2.4
+1810,Early Anglo-Saxon,2,0.96
+1810,Edo Period,7,3.37
+1810,Iron Age,3,1.44
+1810,Other,117,56.25
+1810,Roman,29,13.94
+1810,Romano-British,45,21.63
+1820,Attic,4,1.15
+1820,Edo Period,4,1.15
+1820,Iron Age,3,0.86
+1820,Neolithic/Bronze Age,1,0.29
+1820,Other,321,92.24
+1820,Roman,9,2.59
+1820,Romano-British,6,1.72
+1830,Attic,89,9.65
+1830,Bronze Age,3,0.33
+1830,Early Anglo-Saxon,3,0.33
+1830,Edo Period,3,0.33
+1830,Iron Age,5,0.54
+1830,Neolithic,1,0.11
+1830,Neolithic/Bronze Age,1,0.11
+1830,Other,747,81.02
+1830,Qing dynasty,1,0.11
+1830,Roman,11,1.19
+1830,Romano-British,58,6.29
+1840,Attic,98,8.7
+1840,Bronze Age,10,0.89
+1840,Early Anglo-Saxon,6,0.53
+1840,Edo Period,2,0.18
+1840,Iron Age,39,3.46
+1840,Neolithic,6,0.53
+1840,Neolithic/Bronze Age,44,3.9
+1840,Other,820,72.76
+1840,Qing dynasty,7,0.62
+1840,Roman,22,1.95
+1840,Romano-British,73,6.48
+1850,Attic,62,2.39
+1850,Bronze Age,63,2.42
+1850,Early Anglo-Saxon,78,3.0
+1850,Iron Age,45,1.73
+1850,Neolithic,39,1.5
+1850,Neolithic/Bronze Age,52,2.0
+1850,Other,1658,63.82
+1850,Qing dynasty,7,0.27
+1850,Roman,96,3.7
+1850,Romano-British,498,19.17
+1860,Attic,232,8.65
+1860,Bronze Age,87,3.24
+1860,Early Anglo-Saxon,63,2.35
+1860,Edo Period,14,0.52
+1860,Iron Age,75,2.8
+1860,Neolithic,109,4.06
+1860,Neolithic/Bronze Age,119,4.44
+1860,Other,1689,62.95
+1860,Qing dynasty,5,0.19
+1860,Roman,110,4.1
+1860,Romano-British,180,6.71
+1870,Attic,47,1.42
+1870,Bronze Age,135,4.07
+1870,Early Anglo-Saxon,140,4.22
+1870,Edo Period,3,0.09
+1870,Iron Age,73,2.2
+1870,Neolithic,170,5.12
+1870,Neolithic/Bronze Age,614,18.49
+1870,Other,1815,54.67
+1870,Qing dynasty,42,1.27
+1870,Roman,89,2.68
+1870,Romano-British,192,5.78
+1880,Attic,115,2.11
+1880,Bronze Age,102,1.87
+1880,Early Anglo-Saxon,146,2.68
+1880,Edo Period,231,4.23
+1880,Iron Age,94,1.72
+1880,Neolithic,153,2.8
+1880,Neolithic/Bronze Age,133,2.44
+1880,Other,4087,74.92
+1880,Qing dynasty,98,1.8
+1880,Roman,96,1.76
+1880,Romano-British,200,3.67
+1890,Attic,74,1.73
+1890,Bronze Age,64,1.49
+1890,Early Anglo-Saxon,181,4.22
+1890,Edo Period,105,2.45
+1890,Iron Age,111,2.59
+1890,Neolithic,94,2.19
+1890,Neolithic/Bronze Age,147,3.43
+1890,Other,3130,72.99
+1890,Qing dynasty,51,1.19
+1890,Roman,112,2.61
+1890,Romano-British,219,5.11
+1900,Attic,30,0.58
+1900,Bronze Age,371,7.23
+1900,Early Anglo-Saxon,57,1.11
+1900,Edo Period,193,3.76
+1900,Iron Age,131,2.55
+1900,Neolithic,227,4.42
+1900,Neolithic/Bronze Age,347,6.76
+1900,Other,3489,67.97
+1900,Qing dynasty,35,0.68
+1900,Roman,146,2.84
+1900,Romano-British,107,2.08
+1910,Attic,26,0.62
+1910,Bronze Age,42,1.0
+1910,Early Anglo-Saxon,27,0.64
+1910,Edo Period,167,3.96
+1910,Iron Age,75,1.78
+1910,Neolithic,303,7.19
+1910,Neolithic/Bronze Age,758,18.0
+1910,Other,2594,61.59
+1910,Qing dynasty,90,2.14
+1910,Roman,42,1.0
+1910,Romano-British,88,2.09
+1920,Attic,30,0.6
+1920,Bronze Age,68,1.35
+1920,Early Anglo-Saxon,32,0.63
+1920,Edo Period,48,0.95
+1920,Iron Age,79,1.57
+1920,Neolithic,175,3.47
+1920,Neolithic/Bronze Age,164,3.25
+1920,Other,4185,83.02
+1920,Qing dynasty,74,1.47
+1920,Roman,78,1.55
+1920,Romano-British,108,2.14
+1930,Attic,12,0.27
+1930,Bronze Age,58,1.29
+1930,Early Anglo-Saxon,125,2.78
+1930,Edo Period,39,0.87
+1930,Iron Age,154,3.42
+1930,Neolithic,212,4.71
+1930,Neolithic/Bronze Age,173,3.84
+1930,Other,3465,76.93
+1930,Qing dynasty,123,2.73
+1930,Roman,30,0.67
+1930,Romano-British,113,2.51
+1940,Attic,9,0.44
+1940,Bronze Age,11,0.54
+1940,Early Anglo-Saxon,9,0.44
+1940,Edo Period,102,4.96
+1940,Iron Age,36,1.75
+1940,Neolithic,88,4.28
+1940,Neolithic/Bronze Age,84,4.09
+1940,Other,1591,77.38
+1940,Qing dynasty,57,2.77
+1940,Roman,21,1.02
+1940,Romano-British,48,2.33
+1950,Attic,41,2.01
+1950,Bronze Age,9,0.44
+1950,Early Anglo-Saxon,15,0.74
+1950,Edo Period,106,5.2
+1950,Iron Age,52,2.55
+1950,Neolithic,219,10.74
+1950,Neolithic/Bronze Age,208,10.2
+1950,Other,1261,61.81
+1950,Qing dynasty,44,2.16
+1950,Roman,14,0.69
+1950,Romano-British,71,3.48
+1960,Attic,36,1.35
+1960,Bronze Age,123,4.6
+1960,Early Anglo-Saxon,143,5.35
+1960,Edo Period,28,1.05
+1960,Iron Age,140,5.23
+1960,Neolithic,175,6.54
+1960,Neolithic/Bronze Age,305,11.4
+1960,Other,1485,55.51
+1960,Qing dynasty,47,1.76
+1960,Roman,53,1.98
+1960,Romano-British,140,5.23
+1970,Attic,28,0.7
+1970,Bronze Age,66,1.65
+1970,Early Anglo-Saxon,126,3.15
+1970,Edo Period,239,5.97
+1970,Iron Age,220,5.49
+1970,Neolithic,78,1.95
+1970,Neolithic/Bronze Age,69,1.72
+1970,Other,2753,68.74
+1970,Qing dynasty,95,2.37
+1970,Roman,54,1.35
+1970,Romano-British,277,6.92
+1980,Attic,7,0.11
+1980,Bronze Age,125,1.92
+1980,Early Anglo-Saxon,144,2.21
+1980,Edo Period,148,2.27
+1980,Iron Age,308,4.73
+1980,Neolithic,260,4.0
+1980,Neolithic/Bronze Age,322,4.95
+1980,Other,4403,67.67
+1980,Qing dynasty,160,2.46
+1980,Roman,143,2.2
+1980,Romano-British,487,7.48
+1990,Attic,3,0.08
+1990,Bronze Age,58,1.59
+1990,Early Anglo-Saxon,1,0.03
+1990,Edo Period,110,3.02
+1990,Iron Age,304,8.34
+1990,Neolithic,78,2.14
+1990,Neolithic/Bronze Age,34,0.93
+1990,Other,2609,71.6
+1990,Qing dynasty,61,1.67
+1990,Roman,87,2.39
+1990,Romano-British,299,8.21
+2000,Attic,4,0.1
+2000,Bronze Age,26,0.65
+2000,Early Anglo-Saxon,44,1.1
+2000,Edo Period,83,2.07
+2000,Iron Age,48,1.2
+2000,Neolithic,76,1.89
+2000,Neolithic/Bronze Age,126,3.14
+2000,Other,3434,85.61
+2000,Qing dynasty,31,0.77
+2000,Roman,50,1.25
+2000,Romano-British,89,2.22
+2010,Attic,2,0.11
+2010,Bronze Age,16,0.91
+2010,Early Anglo-Saxon,16,0.91
+2010,Edo Period,43,2.44
+2010,Iron Age,53,3.01
+2010,Neolithic,16,0.91
+2010,Neolithic/Bronze Age,2,0.11
+2010,Other,1478,84.03
+2010,Qing dynasty,47,2.67
+2010,Roman,12,0.68
+2010,Romano-British,74,4.21
+2020,Edo Period,21,9.33
+2020,Iron Age,2,0.89
+2020,Neolithic,7,3.11
+2020,Other,183,81.33
+2020,Qing dynasty,10,4.44
+2020,Roman,1,0.44
+2020,Romano-British,1,0.44
