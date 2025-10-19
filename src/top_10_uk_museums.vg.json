@@ -6,10 +6,10 @@
     "fontSize": 16,
     "color": "black"
   },
-  "width": 700,
-  "height": 400,
+  "width": 800,
+  "height": 500,
   "data": {
-    "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/refs/heads/main/top_10_uk.csv",
+    "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/refs/heads/main/data/top_10_uk.csv",
     "format": {"type": "csv"}
   },
   "transform": [

@@ -1,52 +1,45 @@
-var vg_1 = "src/map.vg.json";       // Global map
-var vg_2 = "src/uk.map.vg.json";    // UK map
-var vg_3 = "src/top.10.lad.density.json";
-var vg_4 = "src/subject.json";
-var vg_5 = "src/top.10.museum.barchart.json";
-var vg_6 = "src/acquisition_over_time.json";
-// var vg_6 = "top.15.object.type.json";
-// var vg_7 = "top.15.cultures.json";
+// ====== Visualization File Paths ======
+var vg_1 = "src/global_museum_density.vg.json";     // Global museum density
+var vg_2 = "src/uk_museum_density.vg.json";         // UK museum density map
+var vg_3 = "src/uk_museum_population.vg.json";      // UK museum count vs population
+var vg_4 = "src/uk_museum_subject.vg.json";         // Museum subjects (lollipop chart)
+var vg_5 = "src/top_10_uk_museums.vg.json";         // Top 10 most visited UK museums
+var vg_6 = "src/acquisition_over_time.vg.json";     // British Museum acquisitions over time
 
 
+// ====== Embed Each Visualization ======
 vegaEmbed("#museum_map", vg_1)
   .then(function(result) {
-    console.log("Global map successfully loaded!");
+    console.log("✅ Global museum density map loaded successfully!");
   })
   .catch(console.error);
 
 vegaEmbed("#uk_map", vg_2)
   .then(function(result) {
-    console.log("UK map successfully loaded!");
+    console.log("✅ UK museum density map loaded successfully!");
   })
   .catch(console.error);
 
-  vegaEmbed("#density", vg_3)
+vegaEmbed("#population", vg_3)
   .then(function(result) {
-    console.log("UK map successfully loaded!");
+    console.log("✅ Museum count vs population scatter plot loaded successfully!");
   })
   .catch(console.error);
 
-  vegaEmbed("#subject", vg_4)
+vegaEmbed("#subject", vg_4)
   .then(function(result) {
-    console.log("UK map successfully loaded!");
+    console.log("✅ UK museum subject distribution chart loaded successfully!");
   })
   .catch(console.error);
 
-
-  vegaEmbed("#top_10", vg_5)
+vegaEmbed("#top_10", vg_5)
   .then(function(result) {
-    console.log("UK map successfully loaded!");
+    console.log("✅ Top 10 most visited UK museums chart loaded successfully!");
   })
   .catch(console.error);
 
-  vegaEmbed("#object_type", vg_6)
+vegaEmbed("#acquisition", vg_6)
   .then(function(result) {
-    console.log("UK map successfully loaded!");
+    console.log("✅ British Museum acquisitions over time chart loaded successfully!");
   })
   .catch(console.error);
-
-  // vegaEmbed("#culture", vg_7)
-  // .then(function(result) {
-  //   console.log("UK map successfully loaded!");
-  // })
-  // .catch(console.error);

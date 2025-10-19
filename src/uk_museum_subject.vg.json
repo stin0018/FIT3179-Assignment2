@@ -7,10 +7,10 @@
     "fontSize": 16,
     "color": "black"
   },
-  "width": 600,
+  "width": 800,
   "height": 500,
   "data": {
-    "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/refs/heads/main/museum_count_by_subject.csv"
+    "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/refs/heads/main/data/museum_count_by_subject.csv"
   },
   "transform": [
     {

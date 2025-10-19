@@ -3,73 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museum Map Visualization</title>
+  <title>Exploring Museums: Global to Local Insights</title>
+  
+  <!-- Vega & Vega-Lite -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@6"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
   <script src="src/vega_lite_vis.js"></script>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
       text-align: center;
-      margin: 20px;
+      padding: 30px 10px;
     }
 
-    h1 {
-      margin-bottom: 40px;
-    }
-
-    .map-section {
-      margin-bottom: 60px;
-    }
-
-    .map-section h2 {
-      margin-bottom: 20px;
-      font-size: 1.5rem;
+    header h1 {
+      font-size: 28px;
+      margin: 0;
       font-weight: bold;
     }
 
-    .vis-container {
-      margin: auto;
-      width: 90%;
-      max-width: 900px;
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    @media (max-width: 768px) {
-      .vis-container {
-        width: 100%;
-        max-width: 100%;
-      }
+    section {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      padding: 25px 30px;
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .chart {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 13px;
     }
   </style>
 </head>
+
 <body>
 
-  <h1>Discover Museums: Explore UK and Global Collections</h1>
+  <header>
+    <h1>Exploring Museums: Global to Local Insights</h1>
+    <p>A data-driven exploration of museum distribution, themes, and acquisitions</p>
+  </header>
 
-  <div class="map-section">
-    <div id="museum_map" class="vis-container"></div>
-  </div>
+  <main>
 
-  <div class="map-section">
-    <div id="uk_map" class="vis-container"></div>
-  </div>
+    <!-- Visualization 1 -->
+    <section>
+      <h2>1. Global Museum Distribution</h2>
+      <p>This map visualizes museum density around the world, measured as the number of museums per 100,000 people. It highlights the contrast between regions with rich cultural infrastructure—such as Europe and North America—and those with fewer public museums, providing insight into global cultural accessibility.</p>
+      <div id="museum_map" class="chart"></div>
+    </section>
 
-  <div class="map-section">
-    <div id="density" class="vis-container"></div>
-  </div>
+    <!-- Visualization 2 -->
+    <section>
+      <h2>2. Museum Density Across the United Kingdom</h2>
+      <p>Zooming into the United Kingdom, this choropleth map shows the density of museums per square kilometer across local authorities. Urban centers like London exhibit higher densities, while rural areas maintain fewer but often specialized museums that serve local communities.</p>
+      <div id="uk_map" class="chart"></div>
+    </section>
 
-  <div class="map-section">
-    <div id="subject" class="vis-container"></div>
-  </div>
+    <!-- Visualization 3 -->
+    <section>
+      <h2>3. Relationship Between Museum Count and Population</h2>
+      <p>This scatterplot compares the number of museums in each local authority against its total population. The red regression line shows the general trend, while red points indicate outliers—regions that have an unusually high or low museum-to-population ratio.</p>
+      <div id="population" class="chart"></div>
+    </section>
 
-  <div class="map-section">
-    <div id="top_10" class="vis-container"></div>
-  </div>
+    <!-- Visualization 4 -->
+    <section>
+      <h2>4. Museum Subjects in the United Kingdom</h2>
+      <p>This lollipop chart breaks down UK museums by their subject focus. Local history dominates, reflecting Britain’s strong commitment to preserving regional heritage. The annotation highlights this cultural emphasis, showing the value placed on local identity.</p>
+      <div id="subject" class="chart"></div>
+    </section>
 
-  <div class="map-section">
-    <div id="object_type" class="vis-container"></div>
-  </div>
+    <!-- Visualization 5 -->
+    <section>
+      <h2>5. Top 10 Most Visited Museums in the UK (2024)</h2>
+      <p>This horizontal bar chart showcases the most visited museums in the UK in 2024. The results highlight iconic institutions such as the British Museum and Tate Modern, revealing the enduring popularity of London’s cultural landmarks among both domestic and international visitors.</p>
+      <div id="top_10" class="chart"></div>
+    </section>
+
+    <!-- Visualization 6 -->
+    <section>
+      <h2>6. Cultural Composition of British Museum Acquisitions (1800–2020)</h2>
+      <p>This stacked bar chart illustrates how the British Museum’s acquisitions evolved over time by cultural origin. The filter enables a closer look at specific periods or civilizations, while the trendline (visible for all cultures) shows the overall acquisition trajectory across decades.</p>
+      <div id="acquisition" class="chart"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Created by Ting Shu Hui — FIT3179 Data Visualisation | 2025</p>
+  </footer>
 
 </body>
 </html>
