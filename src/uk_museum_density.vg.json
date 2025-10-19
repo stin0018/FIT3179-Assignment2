@@ -3,7 +3,7 @@
   "title": {
     "text": "Museum Density Across the United Kingdom (Museums per km²)",
     "anchor":"middle",
-    "fontSize": 16,
+    "fontSize": 18,
     "color": "black"
   },
   "width": 700,
@@ -44,16 +44,25 @@
   },
   "encoding": {
     "color": {
-      "condition": {
-        "test": "datum.museumPerKm2 > 0",
-        "field": "museumPerKm2",
-        "type": "quantitative",
-        "scale": {"scheme": "reds", "domain": [0, 0.02]}
+      "field": "museumPerKm2",
+      "type": "quantitative",
+      "scale": {
+        "type": "linear",
+        "domain": [0, 0.04],
+        "scheme":"reds"
       },
-      "value": "lightgrey",
       "legend": {
-        "orient": "bottom",
-        "title": "Museums per km²"
+        "title": ["Museum Density", "per km²"],
+        "orient": "right",
+        "titleAnchor": "middle",
+        "titleFontSize": 12,
+        "labelFontSize": 12,
+        "titleFontWeight": "bold",
+        "labelColor": "#333",
+        "titleColor": "#333",
+        "gradientLength": 180,
+        "gradientThickness": 12,
+        "offset": 10
       }
     },
     "tooltip": [
@@ -70,4 +79,5 @@
     },
     "view": {"stroke": "transparent"}
   }
+  
 }

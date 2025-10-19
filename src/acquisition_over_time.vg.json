@@ -4,7 +4,7 @@
   "title": {
     "text": "Cultural Composition of British Museum Acquisitions (1800–2020)",
     "anchor": "middle",
-    "fontSize": 16,
+    "fontSize": 18,
     "color": "black"
   },
   "width": 850,
@@ -12,6 +12,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/refs/heads/main/data/british_museum_culture_trends.csv"
   },
+
   "params": [
     {
       "name": "cultureSelect",
@@ -28,11 +29,13 @@
           "Attic", "Bronze Age", "Early Anglo-Saxon", "Qing dynasty",
           "Neolithic/Bronze Age", "Neolithic", "Other"
         ],
-        "name": "Filter by Culture: "
+        "name": "Filter by Culture: ",
+        "label": "left"
       },
       "value": null
     }
   ],
+
   "transform": [
     {
       "calculate": "datum.filtered_culture === 'Other' ? 0.3 : 1",
@@ -47,6 +50,7 @@
       "as": "isOther"
     }
   ],
+
   "layer": [
     {
       "transform": [
@@ -58,7 +62,7 @@
           "field": "decade",
           "type": "ordinal",
           "title": "Decade of Acquisition",
-          "axis": {"labelAngle": -45, "labelFontSize": 12}
+          "axis": {"labelAngle": -45, "labelFontSize": 13}
         },
         "y": {
           "field": "count",
@@ -84,7 +88,12 @@
                 "#8E6BBE", "#4C4C9D", "#9C9C9C"
               ]
             },
-            "legend": {"orient": "right"}
+            "legend": {
+              "orient": "right",
+              "titleFontSize": 15,
+              "labelFontSize": 13,
+              "symbolSize": 120
+            }
           },
           "value": "#4E79A7"
         },
@@ -109,7 +118,7 @@
       "mark": {
         "type": "line",
         "color": "#0f41e6",
-        "strokeWidth": 2,
+        "strokeWidth": 2.5,
         "interpolate": "monotone",
         "tooltip": true
       },
@@ -132,10 +141,10 @@
       ],
       "mark": {
         "type": "text",
-        "dy": -5,
+        "dy": -6,
         "fontSize": 12,
         "fontWeight": "bold",
-        "color": "#2c3e50"
+        "color": "black"
       },
       "encoding": {
         "x": {"field": "decade", "type": "ordinal"},
@@ -144,9 +153,14 @@
       }
     }
   ],
+
   "config": {
     "view": {"stroke": "transparent"},
-    "axis": {"titleFontSize": 14, "labelFontSize": 12},
-    "legend": {"titleFontSize": 13, "labelFontSize": 11}
+    "axis": {"titleFontSize": 15, "labelFontSize": 13},
+    "legend": {
+      "titleFontSize": 15,
+      "labelFontSize": 13,
+      "symbolSize": 120
+    }
   }
 }

@@ -4,10 +4,10 @@
   "title": {
     "text": "Number of Museums in the UK by Subject Category",
     "anchor":"middle",
-    "fontSize": 16,
+    "fontSize": 18,
     "color": "black"
   },
-  "width": 800,
+  "width": 750,
   "height": 500,
   "data": {
     "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/refs/heads/main/data/museum_count_by_subject.csv"
@@ -55,7 +55,8 @@
         "baseline": "top",
         "dy": 15,
         "color": "darkblue",
-        "fontWeight": "bold"
+        "fontWeight": "bold",
+        "fontSize": 12 
       },
       "encoding": {
         "x": {"field": "count_num", "type": "quantitative"},
@@ -71,7 +72,8 @@
         "baseline": "top",
         "dy": 30,
         "color": "darkblue",
-        "fontWeight": "bold"
+        "fontWeight": "bold",
+        "fontSize": 12 
       },
       "encoding": {
         "x": {"field": "count_num", "type": "quantitative"},
@@ -79,5 +81,15 @@
         "text": {"value": "Britain's focus on preserving regional culture"}
       }
     }
-  ]
+  ],
+  "config": {
+    "axis": {
+      "labelFont": "Open Sans",
+      "titleFont": "Poppins",
+      "labelFontSize": 12,
+      "titleFontSize": 14,
+      "titleFontWeight": "bold"
+    },
+    "view": {"stroke": "transparent"}
+  }
 }

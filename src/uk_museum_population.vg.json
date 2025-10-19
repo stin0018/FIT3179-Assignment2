@@ -5,7 +5,7 @@
   "title": {
     "text": "UK Local Authority Museums: Number of Museums vs Total Population",
     "subtitle": "Red points represent outliers far from the regression trendline",
-    "fontSize": 16,
+    "fontSize": 18,
     "subtitleFontSize": 12
   },
   "data": {

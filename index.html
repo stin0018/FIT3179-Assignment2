@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exploring Museums: Global to Local Insights</title>
   
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@500;600&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  
   <!-- Vega & Vega-Lite -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@6"></script>
@@ -13,63 +16,90 @@
 
   <style>
     body {
-      font-family: "Segoe UI", Arial, sans-serif;
+      font-family: "Raleway", sans-serif;
       background-color: #f9f9f9;
       color: #333;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
-      background-color: #003366;
+      background: linear-gradient(135deg, #002d62, #004080);
       color: white;
       text-align: center;
-      padding: 30px 10px;
+      padding: 70px 25px 60px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     }
 
     header h1 {
-      font-size: 28px;
+      font-family: "Playfair Display", serif;
+      font-size: 44px;
       margin: 0;
-      font-weight: bold;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #fffaf0;
+    }
+
+    header p {
+      font-family: "Raleway", sans-serif;
+      font-size: 18px;
+      margin-top: 10px;
+      color: #f2f2f2;
+      letter-spacing: 0.4px;
     }
 
     main {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
+      max-width: 1150px;
+      margin: 60px auto;
+      padding: 0 35px;
     }
 
     section {
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-      padding: 25px 30px;
-      margin-bottom: 50px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 45px 50px 30px;
+      margin-bottom: 60px;
+      text-align: center;
     }
 
     h2 {
-      font-size: 22px;
-      color: #003366;
-      margin-bottom: 10px;
+      font-family: "Poppins", sans-serif;
+      font-size: 30px;
+      color: #002b5c;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: 0.2px;
     }
 
     p {
+      white-space: pre-line;
+      font-family: "Raleway", sans-serif;
       font-size: 15px;
-      margin-bottom: 20px;
+      color: #444;
+      margin: 8px auto 15px;
+      max-width: 550px;
+      line-height: 1.9;
+      font-style: italic;
+      padding-bottom: 20px;
     }
 
     .chart {
-      text-align: center;
-      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
     }
 
     footer {
-      background-color: #003366;
+      background-color: #002d62;
       color: white;
-      text-align: center;
-      padding: 15px 10px;
-      font-size: 13px;
+      text-align: left;
+      padding: 20px 10px;
+      padding-left: 50px;
+      font-family: "Raleway", sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.3px;
     }
   </style>
 </head>
@@ -77,58 +107,102 @@
 <body>
 
   <header>
-    <h1>Exploring Museums: Global to Local Insights</h1>
-    <p>A data-driven exploration of museum distribution, themes, and acquisitions</p>
+    <h1>Exploring Museums: <span>Global to Local Insights</span></h1>
+    <p>A narrative exploration of culture, connection, and collective memory.</p>
   </header>
 
   <main>
 
     <!-- Visualization 1 -->
     <section>
-      <h2>1. Global Museum Distribution</h2>
-      <p>This map visualizes museum density around the world, measured as the number of museums per 100,000 people. It highlights the contrast between regions with rich cultural infrastructure—such as Europe and North America—and those with fewer public museums, providing insight into global cultural accessibility.</p>
+      <h2>🌍 A World Framed by Cultural Access</h2>
+      <p>
+        Across continents, museums help people understand their roots. 
+        Some regions overflow with art and history, while others remain quiet with limited access. 
+        Together, they show how culture connects communities across the world.
+      </p>
       <div id="museum_map" class="chart"></div>
     </section>
 
     <!-- Visualization 2 -->
     <section>
-      <h2>2. Museum Density Across the United Kingdom</h2>
-      <p>Zooming into the United Kingdom, this choropleth map shows the density of museums per square kilometer across local authorities. Urban centers like London exhibit higher densities, while rural areas maintain fewer but often specialized museums that serve local communities.</p>
+      <h2>🗺️ The Uneven Geography of Heritage</h2>
+      <p>
+        Culture thrives where history and opportunity meet. 
+        London and nearby cities shine with rich collections, but smaller towns still preserve their traditions. 
+        Heritage survives in both busy centers and peaceful corners of the country.
+      </p>
       <div id="uk_map" class="chart"></div>
     </section>
 
     <!-- Visualization 3 -->
     <section>
-      <h2>3. Relationship Between Museum Count and Population</h2>
-      <p>This scatterplot compares the number of museums in each local authority against its total population. The red regression line shows the general trend, while red points indicate outliers—regions that have an unusually high or low museum-to-population ratio.</p>
+      <h2>📊 People, Places, and the Weight of Culture</h2>
+      <p>
+        Population growth doesn’t always mean cultural growth. 
+        Busy cities may lose their traditions, while smaller areas protect stories passed down through generations. 
+        The balance between progress and memory defines how culture lasts.
+      </p>
       <div id="population" class="chart"></div>
     </section>
 
     <!-- Visualization 4 -->
     <section>
-      <h2>4. Museum Subjects in the United Kingdom</h2>
-      <p>This lollipop chart breaks down UK museums by their subject focus. Local history dominates, reflecting Britain’s strong commitment to preserving regional heritage. The annotation highlights this cultural emphasis, showing the value placed on local identity.</p>
+      <h2>🏺 The Stories Museums Choose to Tell</h2>
+      <p>
+        Every exhibit shows what people value most. 
+        Local history stands beside art and science, celebrating both knowledge and identity. 
+        Museums become storytellers that help us remember where we come from.
+      </p>
       <div id="subject" class="chart"></div>
     </section>
 
     <!-- Visualization 5 -->
     <section>
-      <h2>5. Top 10 Most Visited Museums in the UK (2024)</h2>
-      <p>This horizontal bar chart showcases the most visited museums in the UK in 2024. The results highlight iconic institutions such as the British Museum and Tate Modern, revealing the enduring popularity of London’s cultural landmarks among both domestic and international visitors.</p>
+      <h2>🏆 Where Visitors Gather in Wonder</h2>
+      <p>
+        From the British Museum to Tate Modern, millions visit each year to explore and learn. 
+        These spaces connect people through curiosity and discovery, turning history into a shared experience. 
+        Wonder continues to draw us together through time.
+      </p>
       <div id="top_10" class="chart"></div>
     </section>
 
     <!-- Visualization 6 -->
     <section>
-      <h2>6. Cultural Composition of British Museum Acquisitions (1800–2020)</h2>
-      <p>This stacked bar chart illustrates how the British Museum’s acquisitions evolved over time by cultural origin. The filter enables a closer look at specific periods or civilizations, while the trendline (visible for all cultures) shows the overall acquisition trajectory across decades.</p>
+      <h2>🕰️ The British Museum Through Time</h2>
+      <p>
+        Over the centuries, the British Museum has grown into a vast collection of human stories. 
+        Each object reflects an era of exploration, learning, and exchange. 
+        The museum’s story keeps growing, just like the world it represents.
+      </p>
       <div id="acquisition" class="chart"></div>
     </section>
 
   </main>
 
   <footer>
-    <p>Created by Ting Shu Hui — FIT3179 Data Visualisation | 2025</p>
+   FIT3179 Data Visualisation | 2025<br>
+   Author: Ting Shu Hui<br>
+   Date Published: 20/10/2025 <br><br>
+
+   <strong>Metadata:</strong><br>
+    <a href="https://en.wikipedia.org/wiki/List_of_the_most-visited_attractions_in_the_United_Kingdom" target="_blank" 
+       style="color:#ffd700; text-decoration:none; font-weight:600;">
+      Wikipedia: Most-Visited UK Attractions
+    </a><br>
+    <a href="https://www.kaggle.com/datasets/yingna667788/british-museum-data" target="_blank" 
+       style="color:#ffd700; text-decoration:none; font-weight:600;">
+      Kaggle: British Museum Dataset
+    </a><br>
+    <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/datasets/numberofmuseumsacrosslocalauthoritydistrictsladintheunitedkingdom" target="_blank" 
+       style="color:#ffd700; text-decoration:none; font-weight:600;">
+      ONS: Museums in UK Local Authorities
+    </a><br>
+    </a><br>
+
+
+
   </footer>
 
 </body>

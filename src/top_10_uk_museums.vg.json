@@ -3,10 +3,10 @@
   "title": {
     "text": "UK’s 10 Most Popular Tourist Attractions (2024)",
     "anchor":"middle",
-    "fontSize": 16,
+    "fontSize": 18,
     "color": "black"
   },
-  "width": 800,
+  "width": 750,
   "height": 500,
   "data": {
     "url": "https://raw.githubusercontent.com/stin0018/FIT3179-Assignment2/refs/heads/main/data/top_10_uk.csv",
@@ -38,6 +38,13 @@
   },
   "config": {
     "title": {"fontSize": 18, "anchor": "start"},
+    "axis": {
+      "labelFont": "Open Sans",
+      "titleFont": "Poppins",
+      "labelFontSize": 12,
+      "titleFontSize": 14,
+      "titleFontWeight": "bold"
+    },
     "view": {"stroke": "transparent"}
   }
 }
